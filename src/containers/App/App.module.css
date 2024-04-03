@@ -1,0 +1,8 @@
+.wrapper {
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+}

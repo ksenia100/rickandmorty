@@ -1,0 +1,100 @@
+.list__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .list__item {
+    width: 14rem;
+    margin: 1%;
+    background-color: #121212;
+    border-radius: var(--border-radius-small);
+    box-shadow: var(--box-shadow-black);
+  }
+  
+  .list__item p {
+    text-align: center;
+    color: rgb(209, 214, 212);
+    font-family: var(--font-family-default);
+    font-size: var(--font-size-default);
+  }
+  
+  .person__photo {
+    width: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: var(--border-radius-small) var(--border-radius-small) 0 0;
+  }
+  
+  .episode_details {
+    text-align: center; 
+    color: rgb(209, 214, 212);
+    font-family: var(--font-family-default);
+  }
+  
+  .episode_details p {
+    font-size: 1rem;
+  }
+    
+  .episode_details h3 {
+    font-size: 1.5rem;
+    color: rgb(215, 185, 146);
+  }
+
+  .breadcrumbs {
+    display: flex;
+    flex-wrap: wrap; 
+    width: 100%;
+    font-family: sans-serif; 
+    font-size: 1.4rem;
+    color: #0c0b0a; 
+    padding: 5px;
+    margin: 5px 0;
+  }
+  
+  .breadcrumbs a {
+    color: #e0d8d8; 
+    margin-right: 5px; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+  
+  .breadcrumbs a:last-child {
+    margin-right: 0;
+  }
+
+   .list__status_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+  }
+  
+  .status_indicator {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    margin-right: 3px;
+    margin-top: 1px;
+    box-shadow: 0 0 1px rgb(255, 255, 255);
+  }
+  
+  .dead {
+    background-color: rgb(255, 0, 0);
+  }
+  
+  .alive {
+    background-color: rgb(7, 239, 7);
+  }
+  
+  .unknown {
+    background-color: white;
+  }
+  
+  .status_txt {
+    margin: 0; 
+  }

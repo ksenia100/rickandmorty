@@ -1,0 +1,41 @@
+.episode_nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    font-family: var(--font-family-default);
+  }
+  
+  .episode_nav_link {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #0d0d0d;
+    color: #ffffff;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 4px;
+  }
+  
+  .episode_nav_link:hover {
+    background-color: #969698;
+    color: #000000;
+  }
+  
+  .episode_nav_link:active {
+    background-color: #969698;
+    color: #000000;
+  }
+  
+  .active{
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #969698;
+    color: #000000;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 4px;
+  }

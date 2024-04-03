@@ -1,0 +1,15 @@
+:root {
+  --font-family-default: sans-serif;
+  --font-size-default: 16px;
+  --font-bold: 600;
+  --font-tiny: 400;
+  
+  --border-radius-small: 4px;
+  --box-shadow-black: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(96, 68, 63);
+}
