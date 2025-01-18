@@ -42,7 +42,7 @@ const CharacterFilter: React.FC<Props> = ({ dispatchFilters, filters }) => {
   return (
     <div className={styles.container__filter}>
       <h1 className={styles.filter}>Filters</h1>
-      <Link to="/character" className={styles.clear} onClick={clearFilters}>
+      <Link to='/character' className={styles.clear} onClick={clearFilters}>
         Clear Filters
       </Link>
       <div >

@@ -11,7 +11,7 @@ interface CharacterListProps {
 
 const CharacterList: React.FC<CharacterListProps> = ({ characters }) => {
   return (
-    <ul className={styles.list__container} data-testid="list__container">
+    <ul className={styles.list__container} data-testid='list__container'>
       {characters.map(({ id, name, img, status }) => (
         <li className={styles.list__item} key={id}>
           <Link to={`/character/${id}`}>

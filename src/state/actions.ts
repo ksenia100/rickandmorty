@@ -1,10 +1,9 @@
-import { CHARACTERS_LOADING, CHARACTERS_LOADED, CHARACTERS_FAILED } from "../constants/constants";
-import { EPISODES_LOADING, EPISODES_LOADED, EPISODES_FAILED, EPISODE_LIST_ROUTE, CHARACTER_LIST_ROUTE} from "../constants/constants";
+import { CHARACTERS_LOADING, CHARACTERS_LOADED, CHARACTERS_FAILED } from '../constants/constants';
+import { EPISODES_LOADING, EPISODES_LOADED, EPISODES_FAILED, EPISODE_LIST_ROUTE, CHARACTER_LIST_ROUTE } from '../constants/constants';
 import { SET_FILTER, CLEAR_FILTERS } from '../constants/constants';
 
-import { getCharacterId, getCharacterImg } from "../services/getCharacterData";
+import { getCharacterId, getCharacterImg } from '../services/getCharacterData';
 
-//characters actions
 export const charactersLoading = (): { type: string } => ({
   type: CHARACTERS_LOADING,
 });
@@ -16,7 +15,7 @@ export const charactersLoaded = (characters: any[]): { type: string, payload: an
 
 export const charactersFailed = (characters: any[]): { type: string, payload: any } => ({
   type: CHARACTERS_FAILED,
-  payload: characters  
+  payload: characters
 });
 
 export const fetchCharacters = async (currentPage: number, searchValue: string, status: string, gender: string, species: string) => {
@@ -33,12 +32,12 @@ export const fetchCharacters = async (currentPage: number, searchValue: string, 
   }));
 
   return {
-      characters: characterList,
-      totalPages: data.info.pages
+    characters: characterList,
+    totalPages: data.info.pages
   };
 };
 
-export const fetchCharactersDetails = async (id: number)=> {
+export const fetchCharactersDetails = async (id: number) => {
   const res = await fetch(`${CHARACTER_LIST_ROUTE}${id}`);
   return await res.json();
 };
@@ -71,12 +70,12 @@ export const episodesFailed = (error: any): { type: string, payload: any } => ({
 
 export const fetchEpisodes = async (currentPage: number) => {
   const res = await fetch(`${EPISODE_LIST_ROUTE}?page=${currentPage}`);
-  if (!res.ok) throw new Error("Data format error or empty response");
+  if (!res.ok) throw new Error('Data format error or empty response');
   return await res.json();
 }
 
 export const fetchEpisodesDetails = async (id: number) => {
   const res = await fetch(`${EPISODE_LIST_ROUTE}${id}`);
-  if (!res.ok) throw new Error("Data format error or empty response");
+  if (!res.ok) throw new Error('Data format error or empty response');
   return await res.json();
 }

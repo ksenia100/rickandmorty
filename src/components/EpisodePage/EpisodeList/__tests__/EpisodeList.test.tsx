@@ -8,19 +8,19 @@ import EpisodeList from '../EpisodeList';
 describe('EpisodeList', () => {
 
   const mockEpisodes: Episode[] = [
-    { 
-      id: 1, 
-      name: 'Pilot', 
-      air_date: 'December 2, 2013', 
-      episode: 'S01E01', 
-      characters: ['Rick', 'Morty'] 
+    {
+      id: 1,
+      name: 'Pilot',
+      air_date: 'December 2, 2013',
+      episode: 'S01E01',
+      characters: ['Rick', 'Morty']
     },
-    { 
-      id: 2, 
-      name: 'Lawnmower Dog', 
-      air_date: 'December 9, 2013', 
-      episode: 'S01E02', 
-      characters: ['Rick', 'Morty'] 
+    {
+      id: 2,
+      name: 'Lawnmower Dog',
+      air_date: 'December 9, 2013',
+      episode: 'S01E02',
+      characters: ['Rick', 'Morty']
     },
   ];
 

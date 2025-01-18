@@ -7,16 +7,16 @@ import CharacterList from '../CharacterList';
 
 describe('CharacterList', () => {
   const mockCharacters: Character[] = [
-    { 
-      id: 1, 
-      name: 'Rick Sanchez', 
-      img: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg', 
+    {
+      id: 1,
+      name: 'Rick Sanchez',
+      img: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
       status: 'Alive'
     },
-    { 
-      id: 2, 
-      name: 'Morty Smith',  
-      img: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg', 
+    {
+      id: 2,
+      name: 'Morty Smith',
+      img: 'https://rickandmortyapi.com/api/character/avatar/2.jpeg',
       status: 'Alive'
     },
   ];

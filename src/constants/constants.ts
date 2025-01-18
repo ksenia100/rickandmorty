@@ -9,6 +9,5 @@ export const EPISODES_FAILED = 'FETCH_EPISODES_FAILURE';
 export const SET_FILTER = 'SET_FILTER';
 export const CLEAR_FILTERS = 'CLEAR_FILTERS';
 
-//routes url
 export const CHARACTER_LIST_ROUTE = 'https://rickandmortyapi.com/api/character/';
 export const EPISODE_LIST_ROUTE = 'https://rickandmortyapi.com/api/episode/';

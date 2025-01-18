@@ -50,7 +50,7 @@ const EpisodeDetails: React.FC = () => {
       {fetchedData && (
         <div className={styles.episode_details}>
           <div className={styles.breadcrumbs}>
-            <Link to="/episode">Episodes</Link> / Episode Details
+            <Link to='/episode'>Episodes</Link> / Episode Details
           </div>
           <h2>{fetchedData.name}</h2>
           <p>{fetchedData.air_date}</p>

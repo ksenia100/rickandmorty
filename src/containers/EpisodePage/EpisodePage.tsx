@@ -10,7 +10,7 @@ import styles from './EpisodePage.module.css';
 
 const EpisodePage: React.FC = () => {
   const dispatch = useDispatch();
-  const episodes = useSelector((state: any) => state.episodes.episodes); 
+  const episodes = useSelector((state: any) => state.episodes.episodes);
   const [currentPage, setCurrentPage] = useState<number>(1);
 
   const onPageChange = (page: number) => {
@@ -19,13 +19,13 @@ const EpisodePage: React.FC = () => {
   };
 
   useEffect(() => {
-    dispatch({ type: EPISODES_LOADING, payload: { currentPage } }); 
+    dispatch({ type: EPISODES_LOADING, payload: { currentPage } });
   }, [dispatch, currentPage]);
 
   return (
     <>
-      <div className={styles.pos}>
-        {episodes && episodes.length > 0 && (  
+      <div className={styles.wrappper}>
+        {episodes && episodes.length > 0 && (
           <EpisodeList episodes={episodes} />
         )}
       </div>
@@ -34,8 +34,4 @@ const EpisodePage: React.FC = () => {
   );
 };
 
-
 export default EpisodePage;
-
-
-

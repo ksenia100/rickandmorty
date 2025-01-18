@@ -9,20 +9,20 @@ import EpisodePage from '../../containers/EpisodePage';
 import CharacterDetails from '../../components/CharacterPage/CharacterDetails';
 import EpisodeDetails from '../../components/EpisodePage/EpisodeDetails';
 
-import styles from "./App.module.css";
+import styles from './App.module.css';
 
 const App: React.FC = () => {
-    
+
     return (
         <BrowserRouter>
             <div className={styles.wrapper}>
                 <Header />
                 <Routes>
-                    <Route path="/" element={<HomePage />} />
-                    <Route path="/character" element={<CharacterPage />} />
-                    <Route path="/character/:id" element={<CharacterDetails />} />
-                    <Route path="/episode" element={<EpisodePage />} />
-                    <Route path="/episode/:id" element={<EpisodeDetails />} />
+                    <Route path='/' element={<HomePage />} />
+                    <Route path='/character' element={<CharacterPage />} />
+                    <Route path='/character/:id' element={<CharacterDetails />} />
+                    <Route path='/episode' element={<EpisodePage />} />
+                    <Route path='/episode/:id' element={<EpisodeDetails />} />
                 </Routes>
             </div>
         </BrowserRouter>

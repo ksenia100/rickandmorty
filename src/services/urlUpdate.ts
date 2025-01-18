@@ -6,7 +6,7 @@ export const appendParamsURL: (
   filters: FiltersState
 ) => void = (currentPage: number, searchValue: string, filters: FiltersState) => {
   const params = new URLSearchParams();
-  
+
   if (currentPage > 1) params.set('page', currentPage.toString());
   if (searchValue) params.set('name', encodeURIComponent(searchValue));
 

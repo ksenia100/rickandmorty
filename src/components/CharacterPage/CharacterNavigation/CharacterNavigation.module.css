@@ -1,78 +1,78 @@
 .navigation {
-    display: flex;
-    position: relative;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
-    margin-top: 5rem;
-  }
-  
-  .pageNumbers {
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    position: absolute; 
-    left: 50%; 
-    transform: translateX(-50%); 
-  }
-  
-  .pageNumber {
-    padding: 8px 12px;
-    font-size: 16px;
-    background-color: #0d0d0d;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .pageNumber:hover {
-    background-color: #969698;
-    color: #000000;
-  }
-  
-  .pageNumber.active {
-    background-color: #969698;
-    color: #000000;
-  }
-  
-  .pageNumber:disabled {
-    color: #000000;
-    cursor: not-allowed;
-  }
-  
-  .arrow {
-    padding: 8px;
-    font-size: 16px;
-    background-color: #121212;
-    color: #ffffff;
-    text-decoration: none;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .arrow:hover {
-    background-color: #121212;
-  }
-  
-  .arrow:disabled {
-    background-color: #121212;
-    color: #000000;
-    cursor: not-allowed;
-  }
-  
-  .point {
-    color: rgb(255, 255, 255);
-    font-size: 1.7rem;
-  }
-  
-  .arrow:first-child {
-    position: absolute;
-    left: 0;
-  }
-  
-  .arrow:last-child {
-    position: absolute;
-    right: 0;
-  }
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+  margin-top: 5rem;
+}
+
+.pageNumbers {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pageNumber {
+  padding: 8px 12px;
+  font-size: 16px;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pageNumber:hover {
+  background-color: #969698;
+  color: #000000;
+}
+
+.pageNumber.active {
+  background-color: #969698;
+  color: #000000;
+}
+
+.pageNumber:disabled {
+  color: #000000;
+  cursor: not-allowed;
+}
+
+.arrow {
+  padding: 8px;
+  font-size: 16px;
+  background-color: #121212;
+  color: #ffffff;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: #121212;
+}
+
+.arrow:disabled {
+  background-color: #121212;
+  color: #000000;
+  cursor: not-allowed;
+}
+
+.point {
+  color: rgb(255, 255, 255);
+  font-size: 1.7rem;
+}
+
+.arrow:first-child {
+  position: absolute;
+  left: 0;
+}
+
+.arrow:last-child {
+  position: absolute;
+  right: 0;
+}

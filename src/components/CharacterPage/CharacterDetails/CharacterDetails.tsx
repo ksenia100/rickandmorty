@@ -1,8 +1,8 @@
-import React from "react";
-import { useState, useEffect } from "react";
-import { useParams, Link } from "react-router-dom";
+import React from 'react';
+import { useState, useEffect } from 'react';
+import { useParams, Link } from 'react-router-dom';
 
-import { fetchCharactersDetails} from "../../../state/actions";
+import { fetchCharactersDetails } from '../../../state/actions';
 import { Character, Indicator } from '../../../types/type';
 
 import styles from './CharacterDetails.module.css';
@@ -23,7 +23,7 @@ const CharacterDetails: React.FC = () => {
   return (
     <div>
       <div className={styles.breadcrumbs}>
-        <Link to="/character">Characters</Link> {` /`} Character Details
+        <Link to='/character'>Characters</Link> {` /`} Character Details
       </div>
       <ul className={styles.list__container}>
         <li className={styles.list__item}>

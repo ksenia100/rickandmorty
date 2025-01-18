@@ -15,7 +15,7 @@ const CharacterSearch: React.FC<Props> = ({ searchValue, setSearchValue }) => {
 
   return (
     <input
-      type="text"
+      type='text'
       placeholder='Search...'
       className={styles.input}
       value={searchValue}

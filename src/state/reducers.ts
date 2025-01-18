@@ -1,11 +1,10 @@
-import { CHARACTERS_LOADING, CHARACTERS_LOADED, CHARACTERS_FAILED } from "../constants/constants";
-import { EPISODES_LOADED, EPISODES_FAILED } from "../constants/constants";
-import { CLEAR_FILTERS, SET_FILTER } from "../constants/constants";
+import { CHARACTERS_LOADING, CHARACTERS_LOADED, CHARACTERS_FAILED } from '../constants/constants';
+import { EPISODES_LOADED, EPISODES_FAILED } from '../constants/constants';
+import { CLEAR_FILTERS, SET_FILTER } from '../constants/constants';
 
-import { FiltersState, initialState } from "../types/type";
-import { CharacterState, characterInitialState, episodeInitialState } from "../types/type";
+import { FiltersState, initialState } from '../types/type';
+import { CharacterState, characterInitialState, episodeInitialState } from '../types/type';
 
-//characters reducer
 export const charactersReducer = (state: CharacterState = characterInitialState, action: { type: string, payload?: any }): CharacterState => {
   switch (action.type) {
     case CHARACTERS_LOADING:
@@ -32,7 +31,6 @@ export const charactersReducer = (state: CharacterState = characterInitialState,
   }
 };
 
-//filters reducer
 export const filtersReducer = (state = initialState, action: any): FiltersState => {
   switch (action.type) {
     case SET_FILTER:
@@ -47,7 +45,6 @@ export const filtersReducer = (state = initialState, action: any): FiltersState 
   }
 };
 
-//episodes reducer
 export const episodesReducer = (state = episodeInitialState, action: any) => {
   switch (action.type) {
     case EPISODES_LOADED:

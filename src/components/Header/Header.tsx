@@ -7,9 +7,9 @@ const Header: React.FC = () => {
         <div className={styles.container}>
             <div className={styles.list__container}>
                 <ul>
-                    <li><NavLink to="/"> Home </NavLink> </li>
-                    <li> <NavLink to="/character"> Character </NavLink> </li>
-                    <li><NavLink to="/episode">Episode</NavLink> </li>
+                    <li><NavLink to='/'> Home </NavLink> </li>
+                    <li> <NavLink to='/character'> Character </NavLink> </li>
+                    <li><NavLink to='/episode'>Episode</NavLink> </li>
                 </ul>
             </div>
         </div>

@@ -1,11 +1,10 @@
 import React from 'react';
 import styles from './CharacterNavigation.module.css';
 
-// Page number component properties
 const PageNumber: React.FC<{
-    number: number;  // Page number
-    isActive: boolean;  // Whether the page is active (currently being shown)
-    onClick: () => void;  // Function to be called when the button is clicked
+    number: number;
+    isActive: boolean;
+    onClick: () => void;
 }> = ({ number, isActive, onClick }) => (
     <button
         className={`${styles.pageNumber} ${isActive ? styles.active : ''}`}
@@ -14,14 +13,12 @@ const PageNumber: React.FC<{
     </button>
 );
 
-// Navigation component for character pages
 const CharacterNavigation: React.FC<{
-    paginate: (pageNumber: number) => void;  // Function to change pages
-    currentPage: number;  // Current page
-    totalPages: number;  // Total number of pages
+    paginate: (pageNumber: number) => void;
+    currentPage: number;
+    totalPages: number;
 }> = ({ paginate, currentPage, totalPages }) => {
 
-    // Function to render page numbers with ellipsis for navigation
     const renderPageNumbers = () => {
         const pageNumbers: JSX.Element[] = [];
 
@@ -42,12 +39,12 @@ const CharacterNavigation: React.FC<{
 
         if (totalPages > 7 && currentPage > 3) {
             pageNumbers.splice(1, 0, (
-                <span key="ellipsis1" className={styles.point}>...</span>
+                <span key='ellipsis1' className={styles.point}>...</span>
             ));
         }
         if (totalPages > 7 && currentPage < totalPages - 2) {
             pageNumbers.splice(-1, 0, (
-                <span key="ellipsis2" className={styles.point}>...</span>
+                <span key='ellipsis2' className={styles.point}>...</span>
             ));
         }
 
@@ -75,4 +72,4 @@ const CharacterNavigation: React.FC<{
     );
 };
 
-export default CharacterNavigation; 
+export default CharacterNavigation;

@@ -1,6 +1,6 @@
-.pos {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: flex-start;
-  }
+.wrappper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}

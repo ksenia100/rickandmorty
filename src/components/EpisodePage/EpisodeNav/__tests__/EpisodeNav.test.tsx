@@ -5,7 +5,7 @@ import '@testing-library/jest-dom'; // Import this line
 import EpisodeNav from '../EpisodeNav';
 
 describe('EpisodeNav', () => {
-  
+
   const mockOnPageChange = jest.fn();
 
   it('renders episode navigation links', () => {
@@ -15,7 +15,6 @@ describe('EpisodeNav', () => {
       </Router>
     );
 
-    // Check if navigation links are present
     const link1 = screen.getByText('1');
     expect(link1).toBeInTheDocument();
 
@@ -33,7 +32,6 @@ describe('EpisodeNav', () => {
       </Router>
     );
 
-    // Simulate clicking on the links
     fireEvent.click(screen.getByText('1'));
     expect(mockOnPageChange).toHaveBeenCalledWith(1);
 
